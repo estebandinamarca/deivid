@@ -1,0 +1,359 @@
+/* General */
+html {
+  font-size: 62.5%; /* 1.6rem = 16px */
+  font-family: sans-serif;
+  line-height: 1.1;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: #43484c;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+a {
+  color: #43484c;
+}
+a:hover {
+  text-decoration: underline;
+  color: #007ab7;
+}
+a.no-underline {
+  text-decoration: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+
+/* Forms */
+label {
+  font-size: 1.4rem;
+}
+input[type="text"] {
+  background-color: #fafbfc;
+}
+input::-webkit-input-placeholder {
+  color: #b4b4b4;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+input:-ms-input-placeholder {
+  color: #b4b4b4;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+input::placeholder {
+  color: #b4b4b4;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.form-group {
+  margin-bottom: 2rem;
+}
+.form-control {
+  font-size: 1.3rem;
+  height: 4rem;
+  font-weight: 100;
+  border: 1px solid #b4b4b4;
+}
+select.form-control {
+  color: #979797;
+}
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #b71c1c;
+  background-image: none;
+}
+
+/* Radio Buttons */
+.custom-radio-input:checked ~ .custom-radio-label::before {
+  color: #fff !important;
+  border-color: #ff7900 !important;
+  background-color: #ff7900 !important;
+}
+
+/* Forms > File */
+.custom-file {
+  height: 4rem;
+}
+.custom-file-label {
+  z-index: 1;
+  height: 4rem;
+  padding: 0 10px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #b4b4b4;
+  border: 1px solid #b4b4b4;
+  margin: 0;
+  background-color: #eeeeee;
+}
+.custom-file-label::after {
+  height: 4rem;
+  padding: 0 20px;
+  line-height: 40px;
+  background-color: white;
+  border-color: #ff7900;
+  color: #ff7900;
+  content: "Adjuntar";
+  border: 1px solid #ff7900;
+  margin-top: -1px;
+  margin-right: -1px;
+}
+.custom-file-input {
+  height: 4rem;
+}
+
+/* Select2 */
+.select2-selection__rendered {
+  line-height: 40px !important;
+}
+.select2-container .select2-selection--single {
+  height: 4rem !important;
+}
+.select2-selection__arrow {
+  height: 4rem !important;
+}
+.form-group .select2-container {
+  width: 100% !important;
+  display: block;
+}
+
+/* Input Radio */
+
+/* Buttons */
+.btn {
+  font-size: 1.4rem;
+  border-radius: 2px;
+  min-width: auto;
+  padding: 0.85rem 1.2rem;
+}
+
+.btn-search-input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  background: no-repeat;
+  width: 50px;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.btn-arrow-up-down {
+  border: 0;
+  height: 100%;
+  background-color: transparent;
+  padding: 0;
+}
+
+.btn-outline-secondary {
+  color: #43484c;
+  border-color: #43484c;
+}
+
+/* Tables */
+.table {
+  color: #43484c;
+}
+.table thead th,
+.table thead tr {
+  border-bottom: 1px solid #dfe6ee;
+  text-align: center;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 1.2rem;
+  border-top: 1px solid #dfe6ee;
+}
+.table.border {
+  border: 1px solid #dfe6ee !important;
+}
+.table thead {
+  background-color: #fafbfc;
+}
+.table thead td {
+  padding: 2rem 0.5rem;
+  font-size: 1.4rem;
+}
+.table-striped tbody {
+  background-color: #fafbfc;
+}
+.table-striped tbody tr:nth-of-type(2n + 1) {
+  background-color: #fff;
+}
+.table tbody {
+  font-size: 1.3rem;
+}
+.table a:not(.disabled) {
+  color: #007ab7;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* Pagination */
+a.page-link {
+  padding: 1.3rem 1.7rem;
+  color: #43484c;
+  text-decoration: none;
+}
+
+.page-item.active a.page-link {
+  color: #ec7000;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* Steper */
+.wrapper-progressBar {
+  width: 100%;
+  text-align: center;
+}
+.progressBar {
+  width: 60%;
+  display: inline-block;
+}
+
+.progressBar li {
+  list-style-type: none;
+  float: left;
+  width: 33%;
+  position: relative;
+  text-align: center;
+}
+.progressBar li:before {
+  content: " ";
+  line-height: 30px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 2px solid white;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px;
+  background-color: #b4b4b4;
+}
+.progressBar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #b4b4b4;
+  top: 11px;
+  left: -50%;
+  z-index: -1;
+}
+.progressBar li:first-child:after {
+  content: none;
+}
+.progressBar li {
+  color: #b4b4b4;
+}
+.progressBar li.active {
+  color: #ec7000;
+}
+.progressBar li.active:before {
+  background-color: #ec7000;
+}
+.progressBar .active:after {
+  background-color: #ec7000;
+}
+
+/* Circle Icon */
+a.circle,
+.circle {
+  border-radius: 5rem;
+  border: 1px solid #dfe6ee;
+  width: 3.7rem;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  display: inline-block;
+  text-align: center;
+  color: #43484c;
+  text-decoration: none;
+}
+
+/* Backgrounds */
+.bg-info-lighter {
+  background-color: #fafbfc;
+}
+
+/* Badges */
+.badge-circle,
+.badge-circle:empty {
+  display: inline-block !important;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+  border: 1px solid #dfe6ee;
+  /* border-top: 3px solid #DFE6EE; */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 1.5rem;
+  background: #fafbfc;
+  height: 100%;
+}
+
+.nav-tabs .nav-link.active {
+  border-top: 3px solid #ec7000;
+  color: #ec7000;
+}
+
+/* Tootip */
+.tooltip {
+  font-size: 1.4rem;
+}
+
+/* Popover */
+.popover {
+  max-width: 495px;
+}
+.popover-header {
+  color: #ec7000;
+  background-color: white;
+  padding: 1.3rem 0.9rem;
+  font-size: 1.4rem !important;
+}
+.popover-body {
+  padding: 1.3rem 0.9rem;
+  font-size: 1.3rem !important;
+}
+/* .convenio_campos {
+  padding-right: 0px;
+}
+.convenio_campos input {
+  border: 1px solid #b4b4b4;
+  border-radius: 2px;
+  background-color: #fafbfc;
+} */
+
+/* Fonts */
+h2,
+.h2 {
+  font-size: 2.1rem;
+}
+
+p {
+  font-size: 1.4rem;
+}

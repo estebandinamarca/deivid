@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itaú</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css" />
+  <link rel="stylesheet" href="./../css/select2.css" />
+  <link rel="stylesheet" href="./../css/reboot.css" />
+</head>
+
+<body>
+  <!-- Fake Header (Remove) -->
+  <div class="w-100 text-center">
+    <img class="w-100" src="./../imgs/header.jpg" alt="" />
+  </div>
+
+  <!-- Real Site -->
+  <div class="bg-light py-5">
+    <div class="container-fluid">
+      <!-- Main -->
+      <div class="row">
+        <!-- Form Content -->
+        <div class="col-12 col-md-9">
+          <div class="bg-white border p-5">
+            <!-- Steper -->
+            <div class="row py-5">
+              <div class="col-12 pb-5" style="z-index: 0">
+                <div class="wrapper-progressBar">
+                  <ul class="progressBar">
+                    <li class="active">Ingreso de nómina</li>
+                    <li class="">Administrar de nómina</li>
+                    <li class="">Comprobante</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ingresa tu archivo -->
+            <div class="row py-3">
+              <div class="col-12 col-md-12">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <h2 class="font-weight-normal mb-4">
+                      Ingresa tu archivo
+                    </h2>
+                  </div>
+
+                  <div class="col-12 alert">
+                    <div class="p-4 mb-3 border border-info d-flex align-items-center justify-content-start"
+                      style="border-left-width: 5px !important">
+                      <img class="" style="width: 2.4rem" src="../imgs/info.png" alt="" />
+                      <p class="m-0 px-3">
+                        Ajunta el archivo con tus registros y luego selecciona cargar archivo para continuar.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-dm-12">
+                    <label for="convenio">Convenio</label>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="mb-5 d-flex flex-column flex-lg-row align-items-start justify-content-between">
+                      <input type="text" class="form-control wide-lg flex-fill mr-2 mb-3 mb-lg-0" id="convenio" />
+                      <div class="wide-lg mr-2 mb-3 mb-lg-0">
+                        <div class="custom-file w-100 flex-fill">
+                          <input type="text" class="form-control" id="convenio" placeholder="Selecionar Archivo" />
+                          <small id="customFileLang-info" class="form-text">Debes subir tu nomina en los siguientes
+                            formatos: xls, xlsx, txt, zip.</small>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-outline-secondary mr-2 mb-3 mb-lg-0 botconvenios01"
+                        style="width: 148px;">
+                        Adjuntar
+                      </button>
+                      <button type="button" class="btn btn-primary botconvenios02 mb-3 mb-lg-0" style="width: 148px;">
+                        Cargar archivo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tabla -->
+            <div class="row py-5">
+              <div class="col-12 col-md-7"></div>
+              <div class="col-12 col-md-5">
+                <div class="form-group position-relative">
+                  <label for="buscar-tabla" class="d-none">Buscar</label>
+                  <input type="text" class="form-control bg-white" id="buscar-tabla" aria-describedby=""
+                    placeholder="Buscar por fecha, folio, descripción" />
+                  <button class="btn-search-input"><img src="./../imgs/search.svg" alt="Buscar"></button>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="table-responsive">
+                  <table class="table table-striped border">
+                    <thead>
+                      <tr>
+                        <td scope="col">
+                          Fecha de ingreso
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Folio
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Descripción nómina
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Fecha de pago
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Total de <br> registros
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Estado
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Monto
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col" align="center">
+                          Reutilizar
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>12/12/20</td>
+                        <td>
+                          <a href="/#">12345</a>
+                        </td>
+                        <td>Pago a proveedores</td>
+                        <td>12/12/20</td>
+                        <td>10</td>
+                        <td>Aplicada</td>
+                        <td>$6.000.000</td>
+                        <td align="center">
+                          <a class="d-block" href="/#">
+                            <img style="width: 1.5rem" src="./../imgs/reload.svg" alt="" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12/12/20</td>
+                        <td>
+                          <a href="/#">12345</a>
+                        </td>
+                        <td>Pago a proveedores</td>
+                        <td>12/12/20</td>
+                        <td>10</td>
+                        <td>Aplicada</td>
+                        <td>$6.000.000</td>
+                        <td align="center">
+                          <a class="d-block" href="/#">
+                            <img style="width: 1.5rem" src="./../imgs/reload.svg" alt="" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12/12/20</td>
+                        <td>
+                          <a href="/#">12345</a>
+                        </td>
+                        <td>Pago a proveedores</td>
+                        <td>12/12/20</td>
+                        <td>10</td>
+                        <td>Aplicada</td>
+                        <td>$6.000.000</td>
+                        <td align="center">
+                          <a class="d-block" href="/#">
+                            <img style="width: 1.5rem" src="./../imgs/reload.svg" alt="" />
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-3">
+                <a href="" class="circle">
+                  <img class="" style="width: 1.5rem" src="./../imgs/pdf.svg" alt="" />
+                </a>
+                <a href="" class="circle">
+                  <img class="" style="width: 1.5rem" src="./../imgs/docx.svg" alt="" />
+                </a>
+                <a href="" class="circle">
+                  <img class="" style="" src="./../imgs/email.svg" alt="" />
+                </a>
+              </div>
+              <div class="col-12 col-lg-9">
+                <div class="d-flex align-items-center justify-content-end">
+                  <p class="m-0 px-3">1-10 de 200 registros</p>
+                  <nav class="m-0" aria-label="Navigation">
+                    <ul class="pagination m-0">
+                      <li class="page-item">
+                        <a class="page-link" href="#">Primera</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Última</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3">
+          <div class="bg-light border border-bottom-0 p-3">
+            <div class="row">
+              <div class="col">
+                <h4 class="my-3">Pago a proveedores</h4>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border border-top-0 p-3">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class=" px-0 py-3 no-underline d-block border-bottom active" href="#">Ingresar nómina con
+                      archivo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Ingresar nómina individual</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Gestionar nóminas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Gestionar beneficiarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Consultar nóminas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Consultar históricos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Devoluciones Vales Vista y ordenes
+                      de pagos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Certificados de pago</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block" href="#">Conoce el Pago a proveedores</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  .wide-lg {
+    width: 100%;
+  }
+
+  .form-text {
+    font-size: 14px;
+  }
+
+  small {
+    position: relative;
+    width: auto;
+  }
+
+  @media (min-width: 992px) {
+    .wide-lg {
+      width: 286px;
+    }
+
+    small {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 500px;
+      margin: 5px 0 0 0;
+    }
+  }
+</style>
+
+<script src="./../js/jquery-3.5.1.slim.min.js"></script>
+<script src="./../js/popper.min.js"></script>
+<script src="./../js/bootstrap.min.js"></script>
+<script src="./../js/select2.js"></script>
+<script src="./../js/es.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".select2").select2({
+      language: "es",
+      minimumResultsForSearch: -1,
+    });
+  });
+</script>
+
+</html>
