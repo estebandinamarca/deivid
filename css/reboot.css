@@ -383,31 +383,3 @@ p {
   font-size: 1.4rem;
 }
 
-
-/* Custom 1_ingreso_nomina_archivo */
-.wide-lg {
-  width: 100%;
-}
-
-.form-text {
-  font-size: 14px;
-}
-
-small {
-  position: relative;
-  width: auto;
-}
-
-@media (min-width: 992px) {
-  .wide-lg {
-    width: 286px;
-  }
-
-  small {
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 500px;
-    margin: 5px 0 0 0;
-  }
-}
