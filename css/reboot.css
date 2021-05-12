@@ -63,10 +63,10 @@ input::placeholder {
   margin-bottom: 2rem;
   width: 100%;
 }
+
 @media (min-width: 992px) {
-  .form-group {
-    width: 95%;
-  }
+  .form-group { width: 95%; }
+  .form-group.form-check { width: 100%; }
 }
 
 .form-control {
@@ -84,12 +84,15 @@ select.form-control {
   background-image: none;
 }
 
-/* Radio Buttons */
+/* Input Radio Buttons */
 .custom-radio-input:checked ~ .custom-radio-label::before {
   color: #fff !important;
   border-color: #ff7900 !important;
   background-color: #ff7900 !important;
 }
+
+/* Input Check */
+
 
 /* Forms > File */
 .custom-file {
@@ -151,7 +154,6 @@ select.form-control {
   left: auto !important;
 }
 
-/* Input Radio */
 
 /* Buttons */
 .btn {
@@ -167,6 +169,14 @@ select.form-control {
   .btn-large {
     min-width: 176px;
   }
+}
+.btn-outline-secondary-blue {
+  color: #007ab7!important;
+  border: 1px solid #dfe6ee!important;
+}
+.btn-outline-secondary-blue:hover {
+  color: #003767!important;
+  background-color: #fafbfc;
 }
 
 .btn-search-input {
@@ -378,6 +388,14 @@ h2,
 .h2 {
   font-size: 2.1rem;
 }
+
+h6,
+.h6 {
+  font-size: 1.8rem;
+}
+
+.smaller { font-size: 1.1rem }
+/* .font-weight-bold { font-weight: 600; } */
 
 p {
   font-size: 1.4rem;
