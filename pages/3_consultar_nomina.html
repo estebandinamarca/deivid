@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itaú</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css">
+  <link rel="stylesheet" href="./../css/select2.css"/>
+  <link rel="stylesheet" href="./../css/reboot.css">
+</head>
+<body>
+  
+  <!-- Fake Header (Remove) -->
+  <div class="w-100 text-center">
+    <img class="w-100" src="./../imgs/header.jpg" alt="">
+  </div>
+  
+  <!-- Real Site -->
+  <div class="bg-light py-5">
+    <div class="container-xl">
+      
+      <!-- Main -->
+      <div class="row">
+        
+        <!-- Form Content -->
+        <div class="col-12 col-md-10">
+          <div class="bg-white border p-5">
+            
+            <!-- Ingresa tu archivo -->
+            <div class="row py-3 mb-2">
+              <div class="col-12 col-md-12">
+                <div class="row align-items-center">
+                  <div class="col-12 col-md-9">
+                    <h2 class="font-weight-normal mb-2">Consulta de nóminas</h2>
+                  </div>
+                  <div class="col-12 col-md-3 text-left text-md-right">
+                    <button class="btn btn-primary d-inline-flex align-items-center justify-content-center" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Filtrar nóminas <img src="./../imgs/arrow-down.svg" alt="" class="ml-2" width="17"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="row">
+              <div class="col-12">
+                <div class="collapse" id="collapseExample">
+                  <div class="w-100">
+
+                    <div class="row py-5">
+                      <div class="col text-right">
+                        <div class="d-flex align-items-center justify-content-end">
+                          <p class="m-0 mr-4">Buscar por:</p>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1">Nómina</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Beneficiario</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Fecha de ingreso</p>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-group">
+                              <label for="fecha-desde">Desde</label>
+                              <input type="date" class="form-control" id="fecha-desde">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-group">
+                              <label for="fecha-hasta">Hasta</label>
+                              <input type="date" class="form-control" id="fecha-hasta">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Fecha de pago</p>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-group">
+                              <label for="fecha-desde">Desde</label>
+                              <input type="date" class="form-control" id="fecha-desde">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-group">
+                              <label for="fecha-hasta">Hasta</label>
+                              <input type="date" class="form-control" id="fecha-hasta">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 d-flex align-items-end">
+                        <div class="form-group w-100">
+                          <label for="cantidad-registro">Folio</label>
+                          <input type="text" class="form-control" id="cantidad-registro" aria-describedby="" placeholder="">
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12 col-md">
+                        <div class="form-group">
+                          <label for="estado">Estado</label>
+                          <select class="form-control select2" id="estado">
+                            <option></option>
+                            <option>En digitación</option>
+                            <option>Validada sin error</option>
+                            <option>Validada con error</option>
+                            <option>Aplicada</option>
+                            <option>Autorizada</option>
+                            <option>Débito pendiente</option>
+                            <option>Fondos débitos</option>
+                            <option>Pagos pendientes</option>
+                            <option>Pagada</option>
+                            <option>Pagada parcial</option>
+                            <option>Rechazada</option>
+                            <option>Rechazada no provisionada</option>
+                            <option>Rechazada fuera de horario</option>
+                            <option>Rechazada sin autorización</option>
+                            <option>Eliminada</option>
+                            <option>Bloqueada</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4">
+                        <div class="form-group">
+                          <label for="cantidad-registro">Búsqueda por monto</label>
+                          <input type="text" class="form-control" id="cantidad-registro" aria-describedby="" placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md d-flex align-items-center justify-content-start">
+                        <button class="btn btn-primary" type="button">Aplicar filtros</button>
+                        <button class="btn btn-outline-primary ml-2" type="button">Limpiar filtros</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Buttons Acciones -->
+            <div class="row align-items-center pt-5">
+              <div class="col-12 col-md-7">
+                <button class="btn btn-outline-primary mb-5 mb-md-0" data-toggle="modal" data-target="#modalAplicar" disabled>Reutilizar</button>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="form-group position-relative w-100">
+                  <label for="buscar-tabla" class="d-none">Buscar</label>
+                  <input type="text" class="form-control bg-white" id="buscar-tabla" placeholder="Por fecha, ingreso, folio, etc.." />
+                  <button class="btn-search-input"><img src="./../imgs/search.svg" alt="Buscar"></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- MODALS -->
+            <!-- Modal Aplicar -->
+            <div class="modal fade" id="modalAplicar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalAplicarLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body py-5">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col">
+                          <h1 class="font-weight-bold text-primary py-5 m-0">¿Deseas aplicar esta nómina?</h1>
+                          <div class="table-responsive">
+                            <table class="table table-borderless mb-5">
+                              <thead class="bg-white">
+                                <tr>
+                                  <td scope="col" class="font-weight-bold border-0 px-2 py-3">Convenio</td>
+                                  <td scope="col" class="font-weight-bold border-0 px-2 py-3">Folio</td>
+                                  <td scope="col" class="font-weight-bold border-0 px-2 py-3">Descripción</td>
+                                  <td scope="col" class="font-weight-bold border-0 px-2 py-3">Monto Total</td>
+                                  <td scope="col" class="font-weight-bold border-0 px-2 py-3">Registros</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="border-0 p-2">Proveedores</td>
+                                  <td class="border-0 p-2">504031</td>
+                                  <td class="border-0 p-2">Lorem Ipsum</td>
+                                  <td class="border-0 p-2">$80.000.000</td>
+                                  <td class="border-0 p-2">30</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer border-top bg-light">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+                    <a href="./3_exito.html" class="btn btn-primary">Aceptar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div class="row align-items-end py-0">
+              <div class="col-12">
+                <div class="table-responsive">
+                  <table class="table table-striped border">
+                    <thead>
+                      <tr>
+                        <td scope="col" align="center" class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck0">  
+                            <label class="custom-control-label" for="customCheck0"></label>  
+                          </div>
+                        </td>
+                        <td scope="col" class="align-middle">Descripción</td>
+                        <td scope="col" class="align-middle">Folio</td>
+                        <td scope="col" class="align-middle">Convenio</td>
+                        <td scope="col" class="align-middle">Estado</td>
+                        <td scope="col" class="align-middle">Fecha de ingreso</td>
+                        <td scope="col" class="align-middle">Fecha de pago</td>
+                        <td scope="col" class="align-middle">Cuenta de cargo</td>
+                        <td scope="col" class="align-middle">Cantidad de registro</td>
+                        <td scope="col" class="align-middle">Monto</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">  
+                            <label class="custom-control-label" for="customCheck1"></label>  
+                          </div>
+                        </td>
+                        <td>Pago fin de mes</td>
+                        <td><a href="./2.1- detalle nomina listar pagos, al presionar click en folio.html">504932</a></td>
+                        <td>Proveedores</td>
+                        <td>Ingresada</td>
+                        <td>12/12/2020</td>
+                        <td>20/01/2021</td>
+                        <td>83949201</td>
+                        <td>200</td>
+                        <td>$300.000.000</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">  
+                            <label class="custom-control-label" for="customCheck2"></label>  
+                          </div>
+                        </td>
+                        <td>Nómina-Febrero</td>
+                        <td><a href="./2.1- detalle nomina listar pagos, al presionar click en folio.html">504932</a></td>
+                        <td>Remuneraciones</td>
+                        <td>Ingresada</td>
+                        <td>12/12/2020</td>
+                        <td>20/01/2021</td>
+                        <td>83949201</td>
+                        <td>200</td>
+                        <td>$500.210.000</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">  
+                            <label class="custom-control-label" for="customCheck3"></label>  
+                          </div>
+                        </td>
+                        <td>Fin de mes</td>
+                        <td><a href="./2.1- detalle nomina listar pagos, al presionar click en folio.html">504932</a></td>
+                        <td>Remuneraciones</td>
+                        <td>Ingresada</td>
+                        <td>12/12/2020</td>
+                        <td>20/01/2021</td>
+                        <td>83949201</td>
+                        <td>200</td>
+                        <td>$500.210.000</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">  
+                            <label class="custom-control-label" for="customCheck4"></label>  
+                          </div>
+                        </td>
+                        <td>Pago marzo</td>
+                        <td><a href="./2.1- detalle nomina listar pagos, al presionar click en folio.html">504932</a></td>
+                        <td>Remuneraciones</td>
+                        <td>Ingresada</td>
+                        <td>12/12/2020</td>
+                        <td>20/01/2021</td>
+                        <td>83949201</td>
+                        <td>200</td>
+                        <td>$500.210.000</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">  
+                            <label class="custom-control-label" for="customCheck5"></label>  
+                          </div>
+                        </td>
+                        <td>Pago marzo</td>
+                        <td><a href="./2.1- detalle nomina listar pagos, al presionar click en folio.html">504932</a></td>
+                        <td>Remuneraciones</td>
+                        <td>Ingresada</td>
+                        <td>12/12/2020</td>
+                        <td>20/01/2021</td>
+                        <td>83949201</td>
+                        <td>200</td>
+                        <td>$500.210.000</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">  
+                            <label class="custom-control-label" for="customCheck6"></label>  
+                          </div>
+                        </td>
+                        <td>Pago marzo</td>
+                        <td><a href="./2.1- detalle nomina listar pagos, al presionar click en folio.html">504932</a></td>
+                        <td>Remuneraciones</td>
+                        <td>Ingresada</td>
+                        <td>12/12/2020</td>
+                        <td>20/01/2021</td>
+                        <td>83949201</td>
+                        <td>200</td>
+                        <td>$500.210.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+            </div>
+            
+            <!-- Buttons & Paginador -->
+            <div class="row align-items-center">
+              <div class="col-12 col-sm-5 col-md-4">
+                <a href="" class="circle">
+                  <img class="" style="width: 1.5rem;" src="./../imgs/pdf.svg" alt="">
+                </a>
+                <a href="" class="circle">
+                  <img class="" style="width: 1.5rem;" src="./../imgs/docx.svg" alt="">
+                </a>
+                <a href="" class="circle">
+                  <img class="" src="./../imgs/email.svg" alt="">
+                </a>
+              </div>
+              <div class="col-12 col-sm-7 col-md-8">
+                <div class="d-flex align-items-center justify-content-end">
+                  <!-- <p class="m-0 px-3">1-10 de 200 registros</p> -->
+                  <nav class="m-0" aria-label="Navigation">
+                    <ul class="pagination m-0">
+                      <li class="page-item"><a class="page-link" href="#">Primera</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Última</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./../js/jquery-3.5.1.slim.min.js"></script>
+<script src="./../js/popper.min.js"></script>
+<script src="./../js/bootstrap.min.js"></script>
+<script src="./../js/select2.js"></script>
+<script src="./../js/es.js"></script>
+<script>
+  $(document).ready(function() {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    $('.select2').select2({
+      language: "es",
+      minimumResultsForSearch: -1,
+      placeholder: 'Selecciona',
+    });
+  });
+</script>
+</html>
