@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itaú</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css" />
+  <link rel="stylesheet" href="./../css/select2.css" />
+  <link rel="stylesheet" href="./../css/reboot.css" />
+</head>
+
+<body>
+  <!-- Fake Header (Remove) -->
+  <div class="w-100 text-center">
+    <img class="w-100" src="./../imgs/header.jpg" alt="" />
+  </div>
+
+  <!-- Real Site -->
+  <div class="bg-light py-5">
+    <div class="container-fluid">
+      <!-- Main -->
+      <div class="row">
+        <!-- Form Content -->
+        <div class="col-12 col-md-9">
+          <div class="bg-white border p-5">
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <h2 class="mt-4 mb-5">Beneficiario</h2>
+              </div>
+              <div class="col-12">
+                <div class="table-responsive mb-4">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="align-middle">
+                          <p class="m-0 text-center">Nombre de beneficiario</p>
+                          <p class="m-0 text-center font-weight-bold">Rodoldo Pérez</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Rut</p>
+                          <p class="m-0 text-center font-weight-bold">17.800.934-5</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Medio de pago</p>
+                          <p class="m-0 text-center font-weight-bold">Cuenta corriente</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Banco</p>
+                          <p class="m-0 text-center font-weight-bold">$34.302</p>                      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" class="bg-info-lighter text-center">
+                          <p class="m-0 py-4 h6 font-weight-bold text-success">Monto: $153.000.000</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-12">
+                <h2>Agregar sub-detalle</h2>
+                <p class="small mb-5">Datos obligatorios *</p>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado1">Tipo documento *</label>
+                  <input type="text" class="form-control" id="estado1" />
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado2">Número de documento *</label>
+                  <input type="text" class="form-control" id="estado2" />
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado3">Rut emisor del documento</label>
+                  <input type="text" class="form-control" id="estado3" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado4">Monto *</label>
+                  <input type="text" class="form-control" id="estado4" />
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado5">Fecha de emisión de documento *</label>
+                  <input type="date" class="form-control" id="estado5" />
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado6">Fecha de pago *</label>
+                  <input type="date" class="form-control" id="estado6" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between no-gutters mb-5">
+              <div class="col-12 col-md-4">
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex flex-column flex-md-row justify-content-end mt-4 mt-md-0">
+                  <button class="btn btn-large btn-outline-primary mr-0 mr-md-2 mb-3 mb-md-0" type="button">Agregar</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tabla -->
+            <div class="row py-5">
+              <div class="col-12">
+                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sub - detalle</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <div class="table-responsive mb-5">
+                  <table class="table table-striped border">
+                    <thead>
+                      <tr>
+                        <td scope="col">
+                          Tipo de documento
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Nº documento
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Rut
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Monto
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Fecha de emisión
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Fecha de pago
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col">
+                          Acciones
+                          <button class="btn-arrow-up-down">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Pago general</td>
+                        <td>2543</td>
+                        <td>14.403.506-7</td>
+                        <td>$34.302</td>
+                        <td>26/04/2021</td>
+                        <td>26/04/2021</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href=""><img src="./../imgs/pencil.svg" height="20px" class="" alt=""></a>
+                            <a href=""><img src="./../imgs/trash.svg" height="20px" class="ml-3" alt=""></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Pago general</td>
+                        <td>2543</td>
+                        <td>14.403.506-7</td>
+                        <td>$34.302</td>
+                        <td>26/04/2021</td>
+                        <td>26/04/2021</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href=""><img src="./../imgs/pencil.svg" height="20px" class="" alt=""></a>
+                            <a href=""><img src="./../imgs/trash.svg" height="20px" class="ml-3" alt=""></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Pago general</td>
+                        <td>2543</td>
+                        <td>14.403.506-7</td>
+                        <td>$34.302</td>
+                        <td>26/04/2021</td>
+                        <td>26/04/2021</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href=""><img src="./../imgs/pencil.svg" height="20px" class="" alt=""></a>
+                            <a href=""><img src="./../imgs/trash.svg" height="20px" class="ml-3" alt=""></a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex flex-column flex-md-row justify-content-between my-5">
+                  <button class="btn btn-large btn-outline-secondary btn-outline-secondary-blue mb-3 mb-md-0" type="button">Volver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3">
+          <div class="bg-light border border-bottom-0 p-3">
+            <div class="row">
+              <div class="col">
+                <h4 class="my-3">Pago a proveedores</h4>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border border-top-0 p-3">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="./1_ingreso_nomina_archivo.html">Ingresar nómina con archivo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom active" href="#">Ingresar nómina manualmente</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Administrar nómina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Consultar nóminas y pagos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Administrar beneficiarios de pagos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block" href="#">Devolución de Vales Vistas y órdenes de pago</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Mis descargas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block" href="#">Ayuda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="./../js/jquery-3.5.1.slim.min.js"></script>
+<script src="./../js/popper.min.js"></script>
+<script src="./../js/bootstrap.min.js"></script>
+<script src="./../js/select2.js"></script>
+<script src="./../js/es.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".select2").select2({
+      language: "es",
+      minimumResultsForSearch: -1,
+      placeholder: "Selecciona",
+    });
+  });
+</script>
+
+</html>

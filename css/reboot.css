@@ -154,7 +154,6 @@ select.form-control {
   left: auto !important;
 }
 
-
 /* Buttons */
 .btn {
   font-size: 1.4rem;
@@ -348,11 +347,10 @@ a.circle,
   /* border-top: 3px solid #DFE6EE; */
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding: 1.5rem;
+  padding: 1.5rem 5rem;
   background: #fafbfc;
   height: 100%;
 }
-
 .nav-tabs .nav-link.active {
   border-top: 3px solid #ec7000;
   color: #ec7000;
@@ -394,10 +392,16 @@ h6,
   font-size: 1.8rem;
 }
 
+.small { font-size: 1.2rem }
 .smaller { font-size: 1.1rem }
 /* .font-weight-bold { font-weight: 600; } */
 
 p {
   font-size: 1.4rem;
+}
+
+/* Font Colors */
+.text-success {
+  color: #00885A;
 }
 
