@@ -89,22 +89,22 @@ select.form-control {
   color: #fff;
   border-color: #ff7900;
   background-color: #ff7900;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 .custom-radio .custom-control-label::before {
   top: 0.25rem;
   left: -1.5rem;
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 .custom-radio .custom-control-label::after {
   position: absolute;
   top: 0.22rem;
   left: -1.47rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
   content: "";
 }
 .custom-radio .custom-control-label {
