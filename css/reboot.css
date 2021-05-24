@@ -303,6 +303,10 @@ select.form-control {
   background-color: transparent;
 }
 
+.table-lg thead td { padding: 2rem; }
+.table-lg th,
+.table-lg td { padding: 1.2rem 2rem; }
+
 /* Pagination */
 a.page-link {
   padding: 1.3rem 1.7rem;
