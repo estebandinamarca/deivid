@@ -36,6 +36,13 @@ a.no-underline {
 .no-underline {
   text-decoration: none !important;
 }
+.link-blue { 
+  color: #007ab7;
+  text-decoration: underline;
+}
+.text-blue { 
+  color: #007ab7!important;
+}
 
 /* Forms */
 label {

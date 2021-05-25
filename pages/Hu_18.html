@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itaú</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css" />
+  <link rel="stylesheet" href="./../css/select2.css" />
+  <link rel="stylesheet" href="./../css/reboot.css" />
+</head>
+
+<body>
+  <!-- Fake Header (Remove) -->
+  <div class="w-100 text-center">
+    <img class="w-100" src="./../imgs/header.jpg" alt="" />
+  </div>
+
+  <!-- Real Site -->
+  <div class="bg-light py-5">
+    <div class="container-fluid">
+      <!-- Main -->
+      <div class="row">
+        <!-- Form Content -->
+        <div class="col-12 col-md-9">
+          <div class="bg-white border p-5">
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <h2 class="mt-4 mb-5">Consulta de nóminas</h2>
+              </div>
+              <div class="col-12 col-lg-6">
+                <p class="h6">Cabecera nómina</p>
+              </div>
+              <div class="col-12 col-lg-6 text-lg-right">
+                <a href="" class="link-blue">Editar cabecera</a>
+              </div>
+              <div class="col-12">
+                <div class="table-responsive mb-4">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="align-middle">
+                          <p class="m-0 text-center">Folio:</p>
+                          <p class="m-0 text-center font-weight-bold">504938</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Tipo de provisión</p>
+                          <p class="m-0 text-center font-weight-bold">Cuenta Corriente</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Nº de cuenta</p>
+                          <p class="m-0 text-center font-weight-bold">0293839303</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Total registros</p>
+                          <p class="m-0 text-center font-weight-bold">3</p>                      
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">
+                          <p class="m-0 text-center">Descripción de Nómina</p>
+                          <p class="m-0 text-center font-weight-bold">Pago a proveedores</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Servicio</p>
+                          <p class="m-0 text-center font-weight-bold">Pago Proveedores</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Monto total:</p>
+                          <p class="m-0 text-center font-weight-bold">$450.320</p>
+                        </td>
+                        <td>
+                          <p class="m-0 text-center">Estado</p>
+                          <p class="m-0 text-center font-weight-bold">Validada sin error</p>                      
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado1">Tipo de previsión</label>
+                  <select class="form-control select2" id="estado1">
+                    <option></option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado2">Descripición de nómina</label>
+                  <input type="text" class="form-control" id="estado2" />
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado3">Tipo de servicio</label>
+                  <select class="form-control select2" id="estado3">
+                    <option></option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters align-items-center pb-5">
+              <div class="col-12 col-lg-4">
+                <div class="form-group">
+                  <label for="estado4">Nº de cuenta</label>
+                  <select class="form-control select2" id="estado4">
+                    <option></option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                    <option>Opción</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="d-flex align-items-center justify-content-lg-end">
+                  <button class="btn btn-large btn-link text-blue mr-lg-2" type="button">Cancelar</button>
+                  <button class="btn btn-large btn-primary" type="button" data-toggle="modal" data-target="#modalAplicar">Guardar</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Aplicar -->
+            <div class="modal fade" id="modalAplicar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalAplicarLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid pb-5">
+                      <div class="row pb-5">
+                        <div class="col pb-5">
+                          <h1 class="font-weight-bold text-primary mt-5 mb-2">¿Deseas guardar los cambios?</h1>
+                          <hr class="mb-5">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer border-top bg-light">
+                    <button type="button" class="btn btn-large btn-link" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-large btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div class="row align-items-end pt-5 pb-5">
+              <div class="col-12 col-lg-8">
+                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Detalles de la nómina</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="form-group position-relative w-100">
+                  <label for="buscar-tabla" class="d-none">Buscar</label>
+                  <input type="text" class="form-control bg-white" id="buscar-tabla" placeholder="Por fecha, ingreso, folio, etc..">
+                  <button class="btn-search-input"><img src="./../imgs/search.svg" alt="Buscar"></button>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="table-responsive">
+                  <table class="table table-striped border">
+                    <thead>
+                      <tr>
+                        <td scope="col" align="center" class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck0">  
+                            <label class="custom-control-label" for="customCheck0"></label>  
+                          </div>
+                        </td>
+                        <td scope="col" class="align-middle">
+                          <div class="d-flex align-items-center">
+                            Rut
+                            <button class="btn-arrow-up-down ml-1">
+                              <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                            </button>
+                          </div>
+                        </td>
+                        <td scope="col" class="align-middle">
+                          Nombre beneficiario
+                          <button class="btn-arrow-up-down ml-1">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col" class="align-middle">
+                          Medio de pago
+                          <button class="btn-arrow-up-down ml-1">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col" class="align-middle">
+                          Banco
+                          <button class="btn-arrow-up-down ml-1">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col" class="align-middle">
+                          Monto total
+                          <button class="btn-arrow-up-down ml-1">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col" class="align-middle">
+                          Estado
+                          <button class="btn-arrow-up-down ml-1">
+                            <img src="./../imgs/arrow-up-down-small.svg" alt="">
+                          </button>
+                        </td>
+                        <td scope="col" align="center">Acciones</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">  
+                            <label class="custom-control-label" for="customCheck1"></label>  
+                          </div>
+                        </td>
+                        <td>16.034.200-4</td>
+                        <td>Pedro Pizarro</td>
+                        <td>Cuenta Itaú</td>
+                        <td>Banco Itaú</td>
+                        <td>$50.000.000</td>
+                        <td>Registro sin error</td>
+                        <td align="center">
+                          <a class="d-inline-block px-1" href="">
+                            <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="Editar los datos de una nómina" src="./../imgs/pencil.svg" alt="">
+                          </a>
+                          <a class="d-inline-block px-1" href="">
+                            <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="Descargar informe de carga" src="./../imgs/document.svg" alt="">
+                          </a>
+                          <a class="d-inline-block px-1" href="">
+                            <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="Descargar informe de carga" src="./../imgs/plus.svg" alt="">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">  
+                            <label class="custom-control-label" for="customCheck1"></label>  
+                          </div>
+                        </td>
+                        <td>16.034.200-4</td>
+                        <td>Pedro Pizarro</td>
+                        <td>Cuenta Itaú</td>
+                        <td>Banco Itaú</td>
+                        <td>$50.000.000</td>
+                        <td>Registro sin error</td>
+                        <td align="center">
+                          <a class="d-inline-block px-1" href="">
+                            <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="Editar los datos de una nómina" src="./../imgs/pencil.svg" alt="">
+                          </a>
+                          <a class="d-inline-block px-1" href="">
+                            <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="Descargar informe de carga" src="./../imgs/document.svg" alt="">
+                          </a>
+                          <a class="d-inline-block px-1" href="">
+                            <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="Descargar informe de carga" src="./../imgs/plus.svg" alt="">
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons & Paginador -->
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-3">
+                <a href="" class="circle">
+                  <img style="width: 1.3rem" src="./../imgs/pdf.svg" alt="" />
+                </a>
+                <a href="" class="circle">
+                  <img style="width: 1.3rem" src="./../imgs/docx.svg" alt="" />
+                </a>
+                <a href="" class="circle">
+                  <img style="width: 1.3rem" src="./../imgs/email.svg" alt="" />
+                </a>
+              </div>
+              <div class="col-12 col-lg-9">
+                <div class="d-flex align-items-center justify-content-end">
+                  <p class="m-0 px-3">1-10 de 200 registros</p>
+                  <nav class="m-0" aria-label="Navigation">
+                    <ul class="pagination m-0">
+                      <li class="page-item">
+                        <a class="page-link" href="#">Primera</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-disabled="true">
+                          <img src="./../imgs/arrow-grey-light-back.svg" alt="">
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">
+                          <img src="./../imgs/arrow-grey-forward.svg" alt="">
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Última</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex flex-column flex-md-row justify-content-between mt-2 mb-5">
+                  <button class="btn btn-large btn-outline-secondary btn-outline-secondary-blue mb-3 mb-md-0" type="button">Volver</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3">
+          <div class="bg-light border border-bottom-0 p-3">
+            <div class="row">
+              <div class="col">
+                <h4 class="my-3">Pago a proveedores</h4>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border border-top-0 p-3">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="./1_ingreso_nomina_archivo.html">Ingresar nómina con archivo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom active" href="#">Ingresar nómina manualmente</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Administrar nómina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Consultar nóminas y pagos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Administrar beneficiarios de pagos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block" href="#">Devolución de Vales Vistas y órdenes de pago</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block border-bottom" href="#">Mis descargas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-0 py-3 no-underline d-block" href="#">Ayuda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="./../js/jquery-3.5.1.slim.min.js"></script>
+<script src="./../js/popper.min.js"></script>
+<script src="./../js/bootstrap.min.js"></script>
+<script src="./../js/select2.js"></script>
+<script src="./../js/es.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".select2").select2({
+      language: "es",
+      minimumResultsForSearch: -1,
+      placeholder: "Selecciona",
+    });
+  });
+</script>
+
+</html>
