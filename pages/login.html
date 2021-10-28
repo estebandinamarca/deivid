@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itaú</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css" />
+  <link rel="stylesheet" href="./../css/reboot.css" />
+</head>
+
+<body>
+  <div class="image-container d-flex flex-column justify-content-between">
+    <div class="w-100">
+      <div class="container py-5">
+        <div class="row gx-5 pt-5 justify-content-center align-items-stretch">
+          <div class="col-12 col-md-4">
+            <div class="box">
+              <img src="../imgs/logo_itau_rgb.png" class="mx-auto d-block" alt="Logo Itaú">
+              <p class="py-5 m-0 text-center">Acceso al portal <strong>Contingencia de Nóminas en línea</strong></p>
+              <div class="form py-5">
+                <div class="form-group w-100 mb-5">
+                  <label for="empresa">Ingrese RUT empresa</label>
+                  <input type="text" class="form-control" id="empresa">
+                </div>
+                <div class="form-group w-100">
+                  <label for="usuario">Ingrese RUT usuario  <img style="width: 1.5rem;" data-toggle="tooltip" data-placement="top" title="El RUT Usuario es su RUT personal" src="./../imgs/info.png" alt=""></label>
+                  <input type="text" class="form-control" id="usuario">
+                </div>
+                <img src="../imgs/recaptcha.png" class="img-fluid mb-4 mx-auto d-block" alt="recaptcha">
+                <!-- <button class="btn btn-block btn-large btn-outline-secondary btn-outline-secondary-blue" disabled type="button">Continuar</button> -->
+                <button class="btn btn-block btn-outline-primary" disabled>Continuar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="box text-center">
+              <p class="m-0 mb-5 text-center">Portal <br> <strong>Contingencia de Nóminas en Línea</strong></p>
+              <img class="mb-4" src="../imgs/login_users.png" alt="">
+              <p class="smaller m-0 mb-5">1 - Para acceder, debe ingresar el RUT de la empresa y usuario. Si es <strong>Pyme, debe repetir el RUT</strong> en ambos campos.</p>
+              <img class="mb-4" src="../imgs/login_email.png" alt="">
+              <p class="smaller m-0 mb-5">2 - Enviaremos un correo electrónico al email registrado con un código de validación, <strong>el código tiene una vigencia de 10 minutos.</strong></p>
+              <img class="mb-4" src="../imgs/login_stars.png" alt="">
+              <p class="smaller m-0 mb-5">3 - Para finalizar debe ingresar el código de validación.</p>
+              <p class="smaller m-0"><strong>El acceso sólo es temporal mientras dura la contingencia.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="login-footer w-100 d-flex align-items-center justify-content-center bg-info p-3">
+      <p class="m-0 mx-3"><a href=""><strong>¿En qué te podemos ayudar?</strong></a></p>
+      <p class="m-0 mx-3"><a href=""><strong><img src="../imgs/login_phone_blue.png" width="12" alt="phone"> <span class="mr-3">600 6860 888</span> Llámanos e ingresa el RUT de tu Empresa</strong></a></p>
+    </div>
+  </div>
+</body>
+
+<style>
+  .image-container {
+    min-height: 100vh;
+    background: url('../imgs/login_fondo.png') no-repeat center center;
+    background-size: cover;
+  }
+  .box {
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    color: #5A6978;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
+    padding: 30px;
+    height: 100%;
+  }
+  .box p {
+    font-size: 1.6rem;
+  }
+  .box p strong {
+    font-weight: bold;
+  }
+  .box .smaller {
+    font-size: 1.3rem;
+  }
+  .login-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn-outline-primary:disabled {
+    color: #B4B4B4;
+    border-color: #B4B4B4;
+  } 
+</style>
+
+<script src="./../js/jquery-3.5.1.slim.min.js"></script>
+<script src="./../js/popper.min.js"></script>
+<script src="./../js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
+</html>

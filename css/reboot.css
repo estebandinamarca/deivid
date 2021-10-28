@@ -396,9 +396,9 @@ a.circle,
 }
 
 /* Backgrounds */
-.bg-info-lighter {
-  background-color: #fafbfc;
-}
+.bg-info-lighter { background-color: #fafbfc; }
+
+.bg-info { background-color: #003767!important; color: white }
 
 /* Badges */
 .badge-circle,
