@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itaú</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css" />
+  <link rel="stylesheet" href="./../css/reboot.css" />
+  <link rel="stylesheet" href="./../css/login.css" />
+</head>
+
+<body class="login">
+  <div class="image-container d-flex flex-column justify-content-between">
+    <div class="w-100">
+      <div class="container py-5">
+        <div class="row gx-5 pt-5 justify-content-center align-items-stretch">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <div class="box position-relative">
+              <a href="" class="login-volver"><img src="../imgs/arrow-blue-back.svg" class="mr-2" alt="volver icon"> Volver</a>
+              <img src="../imgs/logo_itau_rgb.png" class="mx-auto d-block" alt="Logo Itaú">
+              <h6 class="py-5 m-0 text-center h6"><strong>Código de validación</strong></h6>
+              <p class="py-5 m-0 small">Enviamos un email a abc*****@gma***** con el código de validación.</p>
+              <div class="form py-5">
+                <div class="form-group w-100 mb-4">
+                  <label for="empresa">Ingrese el código de validación</label>
+                  <input type="text" class="form-control" id="empresa">
+                </div>
+                <button class="btn btn-block btn-primary mb-5" disabled>Continuar</button>
+                <p class="smaller m-0"><strong>¿Aún no recibes el código?</strong></p>
+                <p class="smaller m-0">Revise su email en “Correos no deseados” y verifique que la casilla itauempresas@itau.cl no esté como remitente bloqueado o no seguro.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="box text-center">
+              <p class="m-0 mb-5 text-center">Portal <br> <strong>Contingencia de Nóminas en Línea</strong></p>
+              <img class="mb-4" src="../imgs/login_users.png" alt="">
+              <p class="smaller m-0 mb-5">1 - Para acceder, debe ingresar el RUT de la empresa y usuario. Si es <strong>Pyme, debe repetir el RUT</strong> en ambos campos.</p>
+              <img class="mb-4" src="../imgs/login_email.png" alt="">
+              <p class="smaller m-0 mb-5">2 - Enviaremos un correo electrónico al email registrado con un código de validación, <strong>el código tiene una vigencia de 10 minutos.</strong></p>
+              <img class="mb-4" src="../imgs/login_stars.png" alt="">
+              <p class="smaller m-0 mb-5">3 - Para finalizar debe ingresar el código de validación.</p>
+              <p class="smaller m-0"><strong>El acceso sólo es temporal mientras dura la contingencia.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="login-footer w-100 d-flex align-items-center justify-content-center bg-info p-3">
+      <p class="m-0 mx-3"><a href=""><strong>¿En qué te podemos ayudar?</strong></a></p>
+      <p class="m-0 mx-3"><a href=""><strong><img src="../imgs/login_phone_blue.png" width="12" alt="phone"> <span class="mr-3">600 6860 888</span> Llámanos e ingresa el RUT de tu Empresa</strong></a></p>
+    </div>
+  </div>
+</body>
+
+<script src="./../js/jquery-3.5.1.slim.min.js"></script>
+<script src="./../js/popper.min.js"></script>
+<script src="./../js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
+</html>

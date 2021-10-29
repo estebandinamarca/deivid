@@ -1,0 +1,64 @@
+.login .image-container {
+  min-height: 100vh;
+  background: url('../imgs/login_fondo.png') no-repeat center center;
+  background-size: cover;
+}
+.login .box {
+  border-radius: 18px;
+  background-color: #FFFFFF;
+  color: #5A6978;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
+  padding: 30px;
+  height: 100%;
+}
+.login .box p {
+  font-size: 1.6rem;
+}
+.login .box p strong {
+  font-weight: bold;
+}
+.login .box .smaller {
+  font-size: 1.3rem;
+}
+.login .login-footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.login .btn {
+  border-radius: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.login .btn-outline-primary:disabled {
+  color: #B4B4B4;
+  border-color: #B4B4B4;
+}
+.login .btn-primary:disabled {
+  background-color: #B4B4B4;
+  border-color: #B4B4B4;
+}
+.login .login-volver {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px;
+  color: #007AB7;
+}
+.login .login-cerrar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px;
+  color: #007AB7;
+}
+.login .box .small {
+  font-size: 1.4rem;
+}
+.login h1 {
+  font-size: 6.4rem;
+}

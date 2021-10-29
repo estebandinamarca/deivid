@@ -6,15 +6,17 @@
   <title>Itaú</title>
   <link rel="stylesheet" href="./../css/bootstrap.css" />
   <link rel="stylesheet" href="./../css/reboot.css" />
+  <link rel="stylesheet" href="./../css/login.css" />
 </head>
 
-<body>
+<body class="login">
   <div class="image-container d-flex flex-column justify-content-between">
     <div class="w-100">
       <div class="container py-5">
         <div class="row gx-5 pt-5 justify-content-center align-items-stretch">
-          <div class="col-12 col-md-4">
-            <div class="box">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <div class="box position-relative">
+              <a href="" class="login-volver"><img src="../imgs/arrow-blue-back.svg" class="mr-2" alt="volver icon"> Volver</a>
               <img src="../imgs/logo_itau_rgb.png" class="mx-auto d-block" alt="Logo Itaú">
               <p class="py-5 m-0 text-center">Acceso al portal <strong>Contingencia de Nóminas en línea</strong></p>
               <div class="form py-5">
@@ -53,40 +55,6 @@
     </div>
   </div>
 </body>
-
-<style>
-  .image-container {
-    min-height: 100vh;
-    background: url('../imgs/login_fondo.png') no-repeat center center;
-    background-size: cover;
-  }
-  .box {
-    border-radius: 18px;
-    background-color: #FFFFFF;
-    color: #5A6978;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.15);
-    padding: 30px;
-    height: 100%;
-  }
-  .box p {
-    font-size: 1.6rem;
-  }
-  .box p strong {
-    font-weight: bold;
-  }
-  .box .smaller {
-    font-size: 1.3rem;
-  }
-  .login-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .btn-outline-primary:disabled {
-    color: #B4B4B4;
-    border-color: #B4B4B4;
-  } 
-</style>
 
 <script src="./../js/jquery-3.5.1.slim.min.js"></script>
 <script src="./../js/popper.min.js"></script>
